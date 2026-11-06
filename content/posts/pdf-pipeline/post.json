@@ -1,0 +1,13 @@
+{
+  "title": "PDF Processing Pipeline",
+  "kind": "guide",
+  "kicker": "Data Pipeline",
+  "summary": "An asynchronous workflow that extracts structured data from invoices and reports.",
+  "stack": [
+    "Python",
+    "Celery",
+    "S3"
+  ],
+  "date": "2026-08-21",
+  "source": "https://github.com/your-username/pdf-pipeline"
+}

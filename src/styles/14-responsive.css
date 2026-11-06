@@ -1,0 +1,149 @@
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+    .hero {
+        max-width: 780px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .resume {
+        max-width: 780px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .skills-card {
+        border-radius: 28px;
+    }
+}
+
+@media (max-width: 960px) {
+    .resume {
+        grid-template-columns: 1fr;
+        max-width: 720px;
+        gap: 1rem;
+    }
+    .resume-right {
+        width: 100%;
+    }
+    .skills-hoodie { display: none; }
+    .page-end {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 0;
+    }
+    .skills-card {
+        min-height: 0;
+        padding: 1.1rem 1.15rem 1.2rem;
+    }
+    .skills-groups {
+        gap: 0.75rem;
+    }
+    .skills-title {
+        letter-spacing: 0.18em;
+        margin-bottom: 0.9rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .hero {
+        max-width: 680px;
+        padding-top: 4.5rem;
+    }
+    .hero-title {
+        font-size: clamp(2.35rem, 7vw, 3.15rem);
+    }
+    .resume {
+        max-width: 680px;
+    }
+    .hanging-lamp {
+        left: auto;
+        right: 1rem;
+        transform: none;
+    }
+    .lamp-swing {
+        scale: 0.82;
+    }
+    .skill-item {
+        font-size: 0.86rem;
+    }
+    .skill-icon,
+    .skill-icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .dialog-stack-row .dialog-actions {
+        margin-left: 0;
+    }
+    .hero {
+        padding: 7rem 1rem 1rem;
+    }
+    .resume {
+        padding: 0 1rem 2rem;
+    }
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 2.7rem);
+        line-height: 1.04;
+        gap: 0.35rem;
+    }
+    .hero-subtitle {
+        font-size: 0.98rem;
+    }
+    .hero-lede {
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+    .hero-actions {
+        gap: 0.5rem;
+    }
+    .pill-group-btn {
+        padding-left: 0.78rem;
+        padding-right: 0.78rem;
+    }
+    .pill.is-static {
+        min-height: 42px;
+    }
+    .skills-card {
+        border-radius: 24px;
+        padding: 1rem;
+    }
+    .skills-title {
+        font-size: 0.66rem;
+        letter-spacing: 0.14em;
+        white-space: nowrap;
+    }
+    .skills-groups {
+        gap: 0.65rem;
+    }
+    .skill-group {
+        gap: 0.5rem;
+    }
+    .skill-group:not(:last-child) {
+        padding-bottom: 0.7rem;
+    }
+    .skill-item {
+        gap: 0.65rem;
+        font-size: 0.8rem;
+        line-height: 1.15;
+    }
+    .lamp-swing {
+        scale: 0.68;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-actions {
+        align-items: stretch;
+    }
+    .pill-group {
+        width: 100%;
+    }
+    .pill.is-static {
+        width: 100%;
+    }
+    .skills-title {
+        margin-right: 0;
+    }
+}

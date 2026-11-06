@@ -1,0 +1,86 @@
+{
+  "Docker": {
+    "icon": "https://cdn.simpleicons.org/docker/2496ED"
+  },
+  "FastAPI": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+  },
+  "PostgreSQL": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "aliases": [
+      "postgres"
+    ]
+  },
+  "Python": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+  },
+  "Telegram": {
+    "icon": "./assets/icons/telegram.svg",
+    "aliases": [
+      "telegram bot api"
+    ]
+  },
+  "React": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  "Node.js": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "aliases": [
+      "nodejs",
+      "node"
+    ]
+  },
+  "MongoDB": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "aliases": [
+      "mongo"
+    ]
+  },
+  "Electron": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg"
+  },
+  "AWS S3": {
+    "icon": "./assets/icons/aws-s3.svg",
+    "aliases": [
+      "s3",
+      "amazon s3"
+    ]
+  },
+  "JavaScript": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "aliases": [
+      "js"
+    ]
+  },
+  "Redis": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+  },
+  "Linux": {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+  },
+  "Git & GitHub": {
+    "html": "<span class=\"skill-icon\">\n                                    <img class=\"skill-icon-github\" src=\"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg\" alt=\"GitHub\" width=\"18\" height=\"18\">\n                                </span>",
+    "aliases": [
+      "git",
+      "github"
+    ]
+  },
+  "Pydantic": {
+    "icon": "https://cdn.simpleicons.org/pydantic/E92063"
+  },
+  "Postman": {
+    "icon": "https://cdn.simpleicons.org/postman/FF6C37"
+  },
+  "SQL": {
+    "html": "<span class=\"skill-icon sql-skill-icon\" aria-hidden=\"true\">\n                                    <svg viewBox=\"0 0 24 24\" role=\"img\">\n                                        <ellipse cx=\"12\" cy=\"5\" rx=\"8.5\" ry=\"3.25\"></ellipse>\n                                        <path d=\"M3.5 5v7c0 1.8 3.8 3.25 8.5 3.25s8.5-1.45 8.5-3.25V5\"></path>\n                                        <path d=\"M3.5 12v7c0 1.8 3.8 3.25 8.5 3.25s8.5-1.45 8.5-3.25v-7\"></path>\n                                    </svg>\n                                </span>"
+  },
+  "Supabase": {
+    "icon": "https://cdn.simpleicons.org/supabase/3ECF8E"
+  },
+  "Cloud Deployment": {
+    "icon": "https://cdn.simpleicons.org/icloud/3693F3"
+  },
+  "n8n": {
+    "icon": "https://cdn.simpleicons.org/n8n/EA4B71"
+  }
+}

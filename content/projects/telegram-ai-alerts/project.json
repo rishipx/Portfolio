@@ -1,0 +1,13 @@
+{
+  "title": "Telegram AI Alerts",
+  "kicker": "Monitoring",
+  "summary": "Real-time alerts with chart snapshots delivered to Telegram.",
+  "stack": [
+    "Python",
+    "Telegram Bot API",
+    "Docker"
+  ],
+  "order": 20,
+  "website": "https://example.com/telegram-ai-alerts",
+  "source": "https://github.com/your-username/telegram-ai-alerts"
+}

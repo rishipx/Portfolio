@@ -1,0 +1,13 @@
+{
+  "title": "Markdown Note Sync",
+  "kicker": "Desktop App",
+  "summary": "A desktop app that syncs local markdown files to an S3 bucket, with version history and live preview.",
+  "stack": [
+    "Electron",
+    "AWS S3",
+    "JavaScript"
+  ],
+  "order": 40,
+  "website": "https://example.com/markdown-note-sync",
+  "source": "https://github.com/your-username/markdown-note-sync"
+}

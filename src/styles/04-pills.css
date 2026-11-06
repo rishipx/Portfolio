@@ -1,0 +1,102 @@
+/* Pill buttons */
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    height: 42px;
+    padding: 0 1.15rem;
+    border-radius: 9999px;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid var(--line);
+    background: var(--cream);
+    color: var(--ink);
+    box-shadow: 0 1px 3px rgba(40, 36, 28, 0.05);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.pill:hover {
+    border-color: var(--green);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px -4px rgba(40, 36, 28, 0.14);
+}
+.pill svg {
+    width: 19px;
+    height: 19px;
+}
+
+/* Unified pill group: Resume · GitHub · Email */
+.pill-group {
+    display: inline-flex;
+    align-items: stretch;
+    border: 1px solid var(--line);
+    border-radius: 9999px;
+    background: var(--cream);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(40, 36, 28, 0.05);
+    height: 42px;
+    box-sizing: border-box;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+.pill-group-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0 1rem;
+    height: 100%;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--line);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+.pill-group-btn:last-child {
+    border-right: none;
+}
+.pill-group-btn:hover {
+    background: var(--paper-3);
+    color: var(--green);
+}
+.pill-group-btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Location pill */
+.pill.is-static {
+    background: var(--paper-2);
+    color: var(--muted);
+    cursor: default;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    padding: 0 0.95rem;
+    box-shadow: none;
+    user-select: none;
+}
+.pill.is-static:hover {
+    background: var(--paper-2);
+    color: var(--muted);
+    border-color: var(--line);
+    transform: none;
+    box-shadow: none;
+}
+.pill.is-static svg {
+    color: var(--green);
+    width: 18px;
+    height: 18px;
+}

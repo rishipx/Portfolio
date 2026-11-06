@@ -1,0 +1,14 @@
+{
+  "title": "Workflow Orchestrator",
+  "kicker": "Automation",
+  "summary": "Build automated pipelines, review past runs, and track trends in one place. Connects to third-party APIs.",
+  "stack": [
+    "Docker",
+    "FastAPI",
+    "PostgreSQL",
+    "Python"
+  ],
+  "order": 10,
+  "website": "https://example.com/workflow-orchestrator",
+  "source": "https://github.com/your-username/workflow-orchestrator"
+}

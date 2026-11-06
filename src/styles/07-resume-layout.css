@@ -1,0 +1,19 @@
+/* Resume section layout */
+
+.resume {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 248px;
+    gap: 1.25rem;
+    padding: 0 1.5rem 2.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+    align-items: stretch;
+    width: 100%;
+    scroll-margin-top: 1rem;
+}
+.resume-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    min-width: 0;
+}

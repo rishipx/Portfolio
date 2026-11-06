@@ -1,0 +1,12 @@
+{
+  "title": "Deploy CLI",
+  "kind": "write-up",
+  "kicker": "Developer Tooling",
+  "summary": "A command-line tool for repeatable deployments, environment checks, and readable release summaries.",
+  "stack": [
+    "Go",
+    "GitHub Actions"
+  ],
+  "date": "2026-07-09",
+  "source": "https://github.com/your-username/deploy-cli"
+}

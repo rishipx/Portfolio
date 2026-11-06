@@ -1,0 +1,89 @@
+/* Design tokens: colors, surfaces and theme variables */
+
+:root {
+    color-scheme: light;
+
+    /* Light theme */
+    --paper:    #F4F2ED;
+    --paper-2:  #EDEAE3;
+    --paper-3:  #E5E1D8;
+    --cream:    #FCFBF8;
+    --ink:      #1A1A18;
+    --ink-2:    #3A3833;
+    --muted:    #5E5A52;
+    --muted-2:  #6B675E;
+    --line:     #D9D5C9;
+    --line-2:   #E7E4DA;
+    --green:    #1F4636;
+    --green-2:  #2A5A46;
+    --orange:   #E0951C;
+    --red:      #B03A2E;
+    --red-2:    #C4503F;
+
+    /* Filled accent surfaces (deep emerald block + light ink) */
+    --accent-bg:      #1D3E30;
+    --accent-ink:     #F6F4EE;
+    --accent-ink-dim: rgba(246, 244, 238, 0.74);
+    --accent-line:    rgba(246, 244, 238, 0.10);
+    --accent-star:    #E8877B;
+
+    --card-shadow:   0 1px 2px rgba(40, 36, 28, 0.04), 0 14px 30px -18px rgba(40, 36, 28, 0.16);
+    --accent-shadow: 0 16px 32px -20px rgba(29, 62, 48, 0.40);
+    --dialog-overlay:  rgba(24, 22, 18, 0.46);
+    --dialog-shadow:   0 32px 64px -24px rgba(24, 22, 18, 0.5);
+    --thumb:         rgba(94, 90, 82, 0.35);
+
+    /* Lamp colors */
+    --lamp-shade-hi:   #456A56;
+    --lamp-shade-mid:  #2E5141;
+    --lamp-shade-lo:   #19372B;
+    --lamp-rim:        rgba(224, 178, 91, 0.88);
+    --lamp-bulb-glow:  radial-gradient(ellipse 50% 28% at 50% 100%, rgba(255, 224, 154, .96), rgba(255, 214, 126, .30) 42%, rgba(255, 214, 126, 0) 78%);
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-mono:  'JetBrains Mono', ui-monospace, monospace;
+    --font-sans:  'Google Sans Flex', 'Inter', system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+
+    /* AMOLED: true black page, near-black surfaces */
+    --paper:    #000000;
+    --paper-2:  #0A0A0A;
+    --paper-3:  #141414;
+    --cream:    #0A0A0A;
+
+    --ink:      #EDEDED;
+    --ink-2:    #BFBFBF;
+    --muted:    #8F8F8F;
+    --muted-2:  #808080;
+
+    --line:     #262626;
+    --line-2:   #1A1A1A;
+
+    --green:    #86C5A2;
+    --green-2:  #6FB08C;
+    --orange:   #D4A862;
+    --red:      #E58E85;
+    --red-2:    #CF6A60;
+
+    --accent-bg:      #0B120E;
+    --accent-ink:     #E6F0EA;
+    --accent-ink-dim: rgba(230, 240, 234, 0.62);
+    --accent-line:    rgba(134, 197, 162, 0.18);
+    --accent-star:    var(--red);
+
+    --card-shadow:   none;
+    --accent-shadow: none;
+    --dialog-overlay:  rgba(0, 0, 0, 0.88);
+    --dialog-shadow:   0 0 0 1px var(--line);
+    --thumb:         rgba(255, 255, 255, 0.2);
+
+    /* Lamp colors (stays lit in dark mode) */
+    --lamp-shade-hi:   #2A2A2A;
+    --lamp-shade-mid:  #1A1A1A;
+    --lamp-shade-lo:   #0E0E0E;
+    --lamp-rim:        rgba(255, 214, 126, 0.95);
+    --lamp-bulb-glow:  radial-gradient(ellipse 50% 28% at 50% 100%, rgba(255, 240, 190, .98), rgba(255, 210, 120, .50) 42%, rgba(255, 210, 120, 0) 80%);
+}

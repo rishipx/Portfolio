@@ -1,0 +1,13 @@
+{
+  "title": "Inventory API",
+  "kicker": "Backend Service",
+  "summary": "An inventory service with stock reservations, audit trails, and webhook updates.",
+  "stack": [
+    "FastAPI",
+    "Redis",
+    "PostgreSQL"
+  ],
+  "order": 50,
+  "website": "https://example.com/inventory-api",
+  "source": "https://github.com/your-username/inventory-api"
+}

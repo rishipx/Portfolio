@@ -1,0 +1,124 @@
+/* Dark theme and brand icon overrides */
+
+[data-theme="dark"] .pill:hover {
+    border-color: rgba(134, 197, 162, 0.55);
+    background: var(--paper-3);
+    box-shadow: none;
+}
+
+[data-theme="dark"] .pill-group-btn:hover {
+    background: var(--paper-3);
+    color: var(--green);
+}
+
+[data-theme="dark"] .pill.is-static {
+    background: var(--paper-2);
+    color: var(--muted);
+}
+[data-theme="dark"] .pill.is-static:hover {
+    background: var(--paper-2);
+    color: var(--muted);
+    border-color: var(--line);
+}
+
+[data-theme="dark"] .project-card:hover {
+    border-color: rgba(134, 197, 162, 0.55);
+}
+
+[data-theme="dark"] .experience-avatar {
+    background: #101A15;
+    color: #9AD3B3;
+    border: 1px solid rgba(134, 197, 162, 0.28);
+    box-shadow: none;
+}
+
+[data-theme="dark"] .email-tooltip-fixed {
+    color: #04140E;
+    border: 1px solid rgba(134, 197, 162, 0.3);
+    box-shadow: none;
+}
+[data-theme="dark"] .email-tooltip-copy-btn {
+    background: rgba(4, 20, 14, 0.16);
+    color: #04140E;
+}
+[data-theme="dark"] .email-tooltip-copy-btn:hover {
+    background: rgba(4, 20, 14, 0.3);
+}
+[data-theme="dark"] .email-tooltip-fixed.copied {
+    color: #1A1200;
+}
+
+[data-theme="dark"] .project-dialog {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+[data-theme="dark"] .project-dialog-panel {
+    background: #0A0A0A;
+    box-shadow: none;
+}
+[data-theme="dark"] .dialog-actions a {
+    color: #04140E;
+    box-shadow: none;
+}
+[data-theme="dark"] .dialog-actions a:hover {
+    background: var(--green-2);
+    box-shadow: none;
+}
+[data-theme="dark"] .project-dialog-close:hover {
+    background: var(--red-2);
+    color: #1A0A08;
+    border-color: var(--red-2);
+    box-shadow: none;
+}
+
+[data-theme="dark"] .experience-tab.active {
+    box-shadow: inset 0 -2px 0 0 var(--green);
+}
+[data-theme="dark"] .project-card-tags span.post-tag {
+    box-shadow: none;
+}
+[data-theme="dark"] .project-card-actions a:hover {
+    background: var(--green);
+    color: #04140E;
+    box-shadow: none;
+}
+[data-theme="dark"] .tech-icon-wrap:hover {
+    background: var(--paper-3);
+}
+
+/* Keep brand icon colors in both themes */
+.skill-icon img,
+.tech-icon-wrap img {
+    filter: none !important;
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+/* GitHub's mark is near-black; lighten it in dark mode */
+[data-theme="dark"] .skill-icon img.skill-icon-github {
+    filter: invert(1) brightness(1.08) !important;
+}
+
+[data-theme="dark"] #custom-scrollbar-track:hover #custom-scrollbar-thumb,
+[data-theme="dark"] #custom-scrollbar-thumb.dragging {
+    background-color: var(--green);
+    box-shadow: none;
+}
+
+[data-theme="dark"] .stats {
+    box-shadow: none;
+}
+
+[data-theme="dark"] .experience,
+[data-theme="dark"] .skills-card {
+    box-shadow: none;
+}
+
+    
+
+/* Dark mode: headings in plain ink, accent only on small details */
+[data-theme="dark"] .hero-title,
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .project-card h3,
+[data-theme="dark"] .project-dialog-title,
+[data-theme="dark"] .dialog-content h3.md-heading { color: var(--ink); }

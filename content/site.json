@@ -1,0 +1,77 @@
+{
+  "name": "Sheldon Cooper",
+  "heading": "Hi, I'm Sheldon.",
+  "role": "Backend Engineer",
+  "tagline": "I build automations and backend services with Python and n8n.",
+  "description": "Sheldon Cooper, backend engineer building Python services and automations.",
+  "email": "hello@example.com",
+  "github": "https://github.com/your-username",
+  "location": "Remote",
+  "projects_title": "Featured projects",
+  "stats": [
+    {
+      "value": "10+",
+      "label": "Live Projects"
+    },
+    {
+      "value": "5",
+      "label": "Automations Built"
+    },
+    {
+      "value": "6m",
+      "label": "Building Software"
+    },
+    {
+      "value": "∞",
+      "label": "Side Projects Unfinished"
+    }
+  ],
+  "work": [
+    {
+      "initials": "EIT",
+      "org": "Example Institute of Technology",
+      "dates": "Jun 2024 – Jul 2024",
+      "role": "Full Stack Developer Intern",
+      "bullets": [
+        "Built an authentication gallery for student credential verification.",
+        "Built a full-stack Python and React app with data pipelines.",
+        "Built responsive UI components in React."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "initials": "EU",
+      "org": "Example University",
+      "dates": "Aug 2023 – May 2027",
+      "role": "B.Tech in Computer Science",
+      "bullets": [
+        "Specialized in backend architecture and API design.",
+        "Core coursework: Data Structures, Algorithms, and DBMS.",
+        "Active member of the Computer Science Society."
+      ]
+    }
+  ],
+  "skills": [
+    [
+      "Python",
+      "Linux",
+      "Git & GitHub"
+    ],
+    [
+      "FastAPI",
+      "Pydantic",
+      "Postman"
+    ],
+    [
+      "PostgreSQL",
+      "SQL",
+      "Supabase"
+    ],
+    [
+      "Docker",
+      "Cloud Deployment",
+      "n8n"
+    ]
+  ]
+}

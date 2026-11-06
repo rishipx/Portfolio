@@ -1,0 +1,13 @@
+{
+  "title": "Personal Finance Tracker",
+  "kicker": "Personal Tooling",
+  "summary": "A self-hosted finance tracker with bank sync, categorized spending and budget rules.",
+  "stack": [
+    "React",
+    "Node.js",
+    "MongoDB"
+  ],
+  "order": 30,
+  "website": "https://example.com/finance-tracker",
+  "source": "https://github.com/your-username/finance-tracker"
+}

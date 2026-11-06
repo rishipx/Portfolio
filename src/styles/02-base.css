@@ -1,0 +1,50 @@
+/* Page defaults, focus and scrollbar */
+
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+body {
+    margin: 0;
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+}
+
+#custom-scrollbar-track {
+    user-select: none;
+    -webkit-user-select: none;
+    position: fixed; top: 0; right: 0; width: 8px; height: 100vh; height: 100dvh;
+    z-index: 55; cursor: pointer;
+    touch-action: none;
+}
+#custom-scrollbar-thumb {
+    position: absolute; left: 0; width: 8px; border-radius: 4px;
+    background-color: var(--thumb);
+    transition: background-color 0.2s ease;
+}
+#custom-scrollbar-track:hover #custom-scrollbar-thumb,
+#custom-scrollbar-thumb.dragging { background-color: var(--green); }
+
+/* Wider grab area on touch screens; the visible thumb stays at the edge */
+@media (pointer: coarse) {
+    #custom-scrollbar-track { width: 20px; }
+    #custom-scrollbar-thumb { left: auto; right: 0; }
+}
+
+/* While the scrollbar is dragged: follow the pointer immediately and do not select text */
+html.is-scroll-dragging { scroll-behavior: auto; }
+.is-scroll-dragging,
+.is-scroll-dragging * {
+    user-select: none;
+    -webkit-user-select: none;
+}

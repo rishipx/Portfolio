@@ -1,0 +1,13 @@
+{
+  "title": "Status Board",
+  "kind": "case-study",
+  "kicker": "Operations",
+  "summary": "A small incident dashboard that turns service telemetry into a clear status page.",
+  "stack": [
+    "React",
+    "WebSockets",
+    "Docker"
+  ],
+  "date": "2026-09-18",
+  "source": "https://github.com/your-username/status-board"
+}

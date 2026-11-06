@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{description}}">
+    <meta name="author" content="{{name}}">
+    {{robots_meta}}
+    <link rel="canonical" href="{{site_url}}/">
+    <meta name="color-scheme" content="dark light">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{name}}">
+    <meta property="og:url" content="{{site_url}}/">
+    <meta property="og:title" content="{{page_title}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="{{site_url}}/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{page_title}}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{page_title}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="{{site_url}}/assets/og-image.png">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#000000">
+    <title>{{page_title}}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.simpleicons.org">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>try{if(localStorage.getItem('theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+    <link rel="stylesheet" href="{{stylesheet}}">
+</head>
+<body>
+
+    <main class="page">
+
+        <!-- Hanging lamp -->
+        <button id="hanging-lamp" class="hanging-lamp" type="button"
+                aria-label="Toggle light and dark mode" aria-pressed="false">
+            <span class="lamp-swing">
+                <span class="lamp-cord"></span>
+                <span class="lamp-shade"></span>
+                <span class="lamp-beam"></span>
+            </span>
+        </button>
+
+        <section class="hero" id="hero">
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    {{heading}}
+                </h1>
+                <p class="hero-subtitle">{{role}}</p>
+                <p class="hero-lede">
+                    {{tagline}}
+                </p>
+
+                <div class="hero-actions">
+                    <!-- Resume, GitHub, Email -->
+                    <div class="pill-group" role="group" aria-label="Resume and contact">
+                        <a href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="pill-group-btn" aria-label="Open resume (PDF) in a new tab">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            <span>Resume</span>
+                        </a>
+
+                        <a href="{{github}}" target="_blank" rel="noopener noreferrer" class="pill-group-btn" aria-label="GitHub">
+                            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a href="mailto:{{email}}" class="pill-group-btn" aria-label="Email: hover to reveal, click to send" id="emailTriggerBtn" data-email="{{email}}">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+
+                    <!-- Location -->
+                    <span class="pill is-static" aria-label="Location: {{location}}">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>{{location}}</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume" id="resume">
+            <div class="resume-left">
+
+                <div class="stats">
+{{stats}}
+                </div>
+
+                <div class="experience">
+                    <div class="experience-tabs" role="tablist" aria-label="Resume details">
+                        <button id="work-tab" class="experience-tab active" data-tab="work" role="tab" aria-controls="work-panel" aria-selected="true" tabindex="0">Work</button>
+                        <button id="edu-tab" class="experience-tab" data-tab="edu" role="tab" aria-controls="edu-panel" aria-selected="false" tabindex="-1">Education</button>
+                    </div>
+
+                    <div id="work-panel" class="experience-list" data-panel="work" role="tabpanel" aria-labelledby="work-tab" tabindex="0">
+{{work}}
+                    </div>
+
+                    <div id="edu-panel" class="experience-list" data-panel="edu" role="tabpanel" aria-labelledby="edu-tab" tabindex="0" hidden>
+{{education}}
+                    </div>
+                </div>
+            </div>
+
+            <aside class="resume-right">
+                <div class="skills-card">
+                    <img class="skills-hoodie" src="./assets/hoodie.gif" alt="" aria-hidden="true">
+                    <h2 class="skills-title">SKILLS &amp; TOOLS</h2>
+
+                    <div class="skills-groups">
+{{skills}}
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects-head">
+                <h2 class="section-title section-title-lg">{{projects_title}}</h2>
+            </div>
+
+            <div class="projects-grid">
+{{projects_grid}}
+
+            </div>
+        </section>
+
+        <div class="page-end" aria-hidden="true">
+            <img class="page-end-mascot" src="./assets/hoodie.gif" alt="" width="274" height="272" loading="lazy">
+        </div>
+
+    </main>
+
+    <div id="custom-scrollbar-track" aria-hidden="true">
+        <div id="custom-scrollbar-thumb"></div>
+    </div>
+
+    <!-- Email tooltip -->
+    <div id="emailTooltip" class="email-tooltip-fixed" role="tooltip" aria-hidden="true">
+        <span class="email-tooltip-email">{{email}}</span>
+        <button class="email-tooltip-copy-btn" aria-label="Copy email address">
+            <svg class="icon-copy" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <svg class="icon-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </button>
+    </div>
+
+    <div id="project-dialog" class="project-dialog" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="dialog-title">
+        <article class="project-dialog-panel">
+            <div class="dialog-content">
+                <div class="project-dialog-header">
+                    <div id="dialog-kicker" class="project-dialog-kicker"></div>
+                    <div class="project-dialog-controls">
+                        <button id="dialog-expand" type="button" class="dialog-window-btn" aria-label="Expand project card" aria-expanded="false" title="Expand project card">
+                            <svg class="dialog-expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            <svg class="dialog-collapse-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden><path d="M8 3v5H3M16 3v5h5M21 16h-5v5M3 16h5v5"/></svg>
+                        </button>
+                        <button id="dialog-close" type="button" class="project-dialog-close" aria-label="Close project details">&times;</button>
+                    </div>
+                </div>
+                <h2 id="dialog-title" class="project-dialog-title"></h2>
+                <section class="dialog-stack-row">
+                    <h3>Stack</h3>
+                    <div id="dialog-stack" class="dialog-stack"></div>
+                    <div class="dialog-actions">
+                        <a href="#" hidden aria-label="Open project website">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                            Website
+                        </a>
+                        <a href="#" hidden aria-label="Open project source">
+                            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            Source
+                        </a>
+                    </div>
+                </section>
+                <div id="dialog-readme"></div>
+            </div>
+        </article>
+    </div>
+
+    <script src="{{script}}" defer></script>
+
+</body>
+</html>

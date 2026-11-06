@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sheldon Cooper portfolio icon">
+  <rect width="64" height="64" rx="16" fill="#06231A"/>
+  <path d="M43 22c-1.500-4.500-6-7-11.500-7C25 15 21 18.500 21 23c0 5 4 7 11 9s11 4.500 11 9.500c0 4.700-4.500 8.500-11.500 8.500-6 0-10.500-2.500-12-7.500" fill="none" stroke="#6EE7B7" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="50" cy="50" r="3.500" fill="#FBBF24"/>
+</svg>

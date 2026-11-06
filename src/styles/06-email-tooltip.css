@@ -1,0 +1,88 @@
+/* Email tooltip */
+
+.email-tooltip-fixed {
+    position: fixed;
+    background: var(--green);
+    color: var(--cream);
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    box-shadow: 0 14px 32px -10px rgba(29, 62, 48, 0.45), 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    cursor: default;
+    user-select: none;
+    transform: translate(-50%, -100%) translateY(-6px) scale(0.94);
+    transition: opacity 0.12s cubic-bezier(0.2, 0.8, 0.2, 1),
+                transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1),
+                visibility 0.12s,
+                background 0.2s ease;
+    transform-origin: center bottom;
+}
+.email-tooltip-fixed.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -100%) translateY(-10px) scale(1);
+}
+.email-tooltip-fixed::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 24px;
+    pointer-events: inherit;
+}
+.email-tooltip-fixed::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--green);
+    transition: border-top-color 0.2s ease;
+}
+.email-tooltip-email {
+    font-weight: 600;
+    font-size: 0.76rem;
+}
+.email-tooltip-copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(250, 246, 236, 0.15);
+    border: none;
+    border-radius: 8px;
+    color: var(--cream);
+    cursor: pointer;
+    padding: 5px 6px;
+    margin-left: 10px;
+    transition: background 0.2s ease, transform 0.1s ease;
+    line-height: 1;
+}
+.email-tooltip-copy-btn:hover {
+    background: rgba(250, 246, 236, 0.3);
+}
+.email-tooltip-copy-btn:active {
+    transform: scale(0.92);
+}
+.email-tooltip-copy-btn .icon-copy { display: block; }
+.email-tooltip-copy-btn .icon-check { display: none; }
+.email-tooltip-fixed.copied { background: var(--orange); }
+.email-tooltip-fixed.copied::after { border-top-color: var(--orange); }
+.email-tooltip-fixed.copied .email-tooltip-copy-btn {
+    background: rgba(26, 18, 0, 0.15);
+    color: #1A1200;
+}
+.email-tooltip-fixed.copied .email-tooltip-copy-btn .icon-copy { display: none; }
+.email-tooltip-fixed.copied .email-tooltip-copy-btn .icon-check { display: block; }
